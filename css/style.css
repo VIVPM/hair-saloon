@@ -629,3 +629,21 @@ html.lenis, html.lenis body { height: auto; }
   .footer-top { grid-template-columns: 1fr; gap: 36px; }
   .footer-map-embed iframe { height: 240px; }
 }
+
+/* footer map is a clickable preview: the page keeps the mouse (so the custom cursor works) and a click opens Google Maps */
+.footer-map-embed { position: relative; display: block; text-decoration: none !important; }
+.footer-map-embed iframe { pointer-events: none; }
+.map-open {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: var(--ink);
+  color: var(--ivory);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  opacity: .9;
+  transition: background .2s ease, color .2s ease;
+}
+.footer-map-embed:hover .map-open,
+.footer-map-embed:focus-visible .map-open { background: var(--gold); color: var(--ink); }
