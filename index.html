@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salon Name | Hair Salon</title>
+  <meta name="description" content="Salon Name is a hair salon specializing in lived-in color, balayage, blonding and modern haircuts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#" class="logo">Salon Name</a>
+
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="#stylists">stylists</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#" class="nav-book js-book">book appointment</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+    <ul>
+      <li><a href="#stylists">stylists</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#" class="js-book">book appointment</a></li>
+    </ul>
+    <a href="#" class="btn btn-solid js-book">BOOK SOONEST OPENING</a>
+    <div class="mobile-nav-note">
+      <strong>Need To Reschedule?</strong>
+      <p>Use the link in your confirmation email up to 48 hours before your appointment, or email us at <a href="mailto:hello@yoursalon.com">hello@yoursalon.com</a></p>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============ INTRO (yellow frame + typing headline) ============ -->
+    <section class="intro">
+      <div class="intro-panel">
+        <h1 class="typing" data-text="The Happiest Chair in Town"><span class="typing-text"></span><span class="caret" aria-hidden="true"></span></h1>
+        <a href="#" class="btn btn-solid js-book">BOOK HAIR APPOINTMENT</a>
+        <h2 class="intro-sub">New Here?</h2>
+        <p class="intro-note"><em>1,000+ clients have trusted us with their hair</em></p>
+        <a href="#hero" class="intro-scroll"><em>Keep scrolling ↓</em></a>
+      </div>
+    </section>
+
+    <!-- ============ SPLIT HERO ============ -->
+    <section id="hero" class="split">
+      <div class="split-media">
+        <img src="images/hero.svg" alt="Hair by Salon Name">
+        <div class="split-media-overlay">
+          <p class="eyebrow">HAIR BY SALON NAME</p>
+          <p class="split-title">YOUR CITY, STATE</p>
+          <a href="#" class="btn btn-outline btn-cream js-book">BOOK HAIR APPOINTMENT</a>
+        </div>
+      </div>
+      <div class="split-content">
+        <p class="eyebrow">SIGNATURE SERVICE</p>
+        <h3 class="split-heading">LIVED-IN BLONDE</h3>
+        <p class="split-sub">SOFT, LOW-MAINTENANCE COLOR</p>
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <img class="feature-img" src="images/feature-1.svg" alt="Signature service">
+        <h4 class="feature-name">balayage</h4>
+        <p class="feature-desc">Hand-painted color that grows out beautifully, so you can go longer between appointments and still love your hair every day.</p>
+        <a href="#" class="btn btn-outline js-book">BOOK THIS SERVICE</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / INTRO TEXT ============ -->
+    <section id="services" class="about">
+      <p class="eyebrow">THE HAPPIEST CHAIR IN TOWN</p>
+      <h2 class="about-heading">Your City Hair Salon for<br>Effortless, Lived-In Hair</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="about-text">Salon Name is a hair salon in your neighborhood specializing in lived-in color, balayage, blonding and modern haircuts. Our stylists are all about effortless, natural hair, and making sure you leave feeling really good about it.</p>
+      <a href="#stylists" class="btn btn-solid">MEET OUR STYLISTS</a>
+    </section>
+
+    <!-- ============ TESTIMONIALS (auto-scrolling) ============ -->
+    <section class="reviews" aria-label="Client reviews">
+      <div class="reviews-track">
+        <!-- Each review is listed once here; main.js duplicates the list for the seamless loop -->
+        <figure class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Such a fun and friendly salon! My stylist really listened and my color came out exactly how I wanted."</blockquote>
+          <figcaption>Client Name</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Best haircut I've had in years. I'm never going anywhere else."</blockquote>
+          <figcaption>Client Name</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Amazing salon, especially for blonding services!"</blockquote>
+          <figcaption>Client Name</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Light, airy atmosphere and such a welcoming team. Highly recommend!"</blockquote>
+          <figcaption>Client Name</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Super friendly service, incredible results."</blockquote>
+          <figcaption>Client Name</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO STRIP ============ -->
+    <section class="photo-strip" aria-label="Salon photos">
+      <img src="images/strip-1.svg" alt="Salon photo 1">
+      <img src="images/strip-2.svg" alt="Salon photo 2">
+      <img src="images/strip-3.svg" alt="Salon photo 3">
+    </section>
+
+    <!-- ============ PROMISE ============ -->
+    <section class="promise">
+      <img class="badge" src="images/badge.svg" alt="" aria-hidden="true">
+      <p class="eyebrow">WE TAKE HAIR SERIOUSLY. OURSELVES, A LITTLE LESS SO.</p>
+      <h2 class="promise-heading">NOT LOVING IT? LET US KNOW.</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <div class="promise-text">
+        <p>Every stylist here takes real pride in their work. We listen carefully, pay attention to the details, and want you to walk out feeling great about your hair. But hair is personal, and once in a while something just isn't quite right.</p>
+        <p><strong>Just tell us.</strong></p>
+        <p>We'll happily get you back in the chair, talk it through and fix it. No awkwardness, no hurt feelings. An honest conversation is always better than living with hair you don't love.</p>
+        <p>Great hair comes from getting to know each other. Over time we learn your hair, you learn how to describe <em>that one little thing</em> you like, and your stylist becomes <strong>your stylist</strong>.</p>
+        <p>We're not after one great appointment. We're after a lot of them.</p>
+        <p><strong>See you soon.</strong></p>
+        <p><em>The happiest chair in town.</em></p>
+      </div>
+      <a href="#" class="btn btn-outline js-book">BOOK AN APPOINTMENT</a>
+    </section>
+
+    <!-- ============ STYLISTS ============ -->
+    <section id="stylists" class="stylists">
+      <p class="eyebrow">MEET THE TEAM</p>
+      <h2 class="section-heading">Our Stylists</h2>
+      <div class="stylist-grid">
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist one">
+          <h3>stylist one</h3>
+          <p><strong>schedule:</strong> mon, tues, thurs, fri</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist two">
+          <h3>stylist two</h3>
+          <p><strong>schedule:</strong> wed-sat</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist three">
+          <h3>stylist three</h3>
+          <p><strong>schedule:</strong> mon-thurs</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist four">
+          <h3>stylist four</h3>
+          <p><strong>schedule:</strong> mon, tues, thurs, fri</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist five">
+          <h3>stylist five</h3>
+          <p><strong>schedule:</strong> tues-fri</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist six">
+          <h3>stylist six</h3>
+          <p><strong>schedule:</strong> mon, tues, thurs, fri</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+        <article class="stylist">
+          <img src="images/stylist.svg" alt="Stylist seven">
+          <h3>stylist seven</h3>
+          <p><strong>schedule:</strong> tues-fri</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">view instagram</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SPLIT FEATURE ============ -->
+    <section class="split">
+      <div class="split-media">
+        <img src="images/feature-2.svg" alt="Featured service">
+        <div class="split-media-overlay split-media-overlay--low">
+          <a href="#" class="btn btn-outline btn-cream js-book">BOOK A CONSULTATION</a>
+        </div>
+      </div>
+      <div class="split-content">
+        <p class="split-sub">CLIENT FAVORITE</p>
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <img class="feature-img" src="images/feature-3.svg" alt="Client favorite service">
+        <h4 class="feature-name">precision haircut</h4>
+        <p class="feature-desc">A tailored cut designed around your hair's natural texture and your everyday routine, finished with a styling lesson so you can recreate it at home.</p>
+        <a href="#" class="btn btn-outline js-book">BOOK THIS SERVICE</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-info">
+        <img class="footer-badge" src="images/footer-badge.svg" alt="" aria-hidden="true">
+        <p>by appointment only</p>
+        <p>need to change an appointment? email us at:</p>
+        <p><strong><a href="mailto:hello@yoursalon.com">hello@yoursalon.com</a></strong></p>
+        <p>located in your neighborhood 📍<br>123 Main Street, Your City, ST 00000</p>
+        <a class="footer-ig" href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+      <nav class="footer-links" aria-label="Quick links">
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="#stylists">stylists</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#" class="js-book">book appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="js-year">2026</span> Salon Name.</p>
+      <ul>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener">instagram</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">cancellation policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
