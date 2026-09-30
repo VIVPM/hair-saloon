@@ -508,9 +508,6 @@ p { margin: 0; }
   .logo-text { font-size: 12px; letter-spacing: 0.1em; }
 }
 
-}
-
-
 /* visit us: address beside a medium-size Google map, above the footer */
 .visit {
   display: grid;
