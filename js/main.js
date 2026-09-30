@@ -49,7 +49,7 @@ if (window.Lenis && !reducedMotion) {
 
 // Scroll reveal: sections fade and slide up as they come into view
 const revealTargets = [
-  ".split-media", ".split-content", ".about > *", ".reviews", ".photo-strip img",
+  ".offers-head > *", ".offer", ".offers-more", ".about-photo", ".about-copy > *", ".reviews",
   ".promise > *", ".stylists > .eyebrow", ".stylists > .section-heading", ".stylists > .page-lead",
   ".stylist", ".page-intro > *", ".service", ".page-cta > *", ".why-list li", ".gallery > .eyebrow", ".gallery > .section-heading", ".gallery-grid img",
 ].join(",");
