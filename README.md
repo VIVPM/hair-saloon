@@ -12,7 +12,7 @@ Open `index.html` in a browser to view it.
 
 ## Quick edits
 
-- **Salon name, address, email:** search the `.html` files for `Fashion TV Salon`, `Your City`, `hello@yoursalon.com`
+- **Salon name, address, phone:** the Kannada name (ಫ್ಯಾಷನ್ ಟಿವಿ ಸಲೋನ್), address and phone are in the header and footer of each `.html` file
 - **Typing headline:** change `data-text="..."` on the `<h1>` in `index.html`
 - **Booking link (Calendly):** set `bookingUrl` at the top of `js/main.js`; every "book" button uses it
 - **Colours:** `--yellow`, `--cream`, `--teal`, `--stripe`, `--pink` in `css/style.css`

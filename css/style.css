@@ -446,23 +446,30 @@ p { margin: 0; }
   .reel-track { animation: none; }
 }
 
-/* logo: diamond "f" mark + salon name */
+/* logo: small diamond "f" mark beside the Kannada salon name */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-family: var(--serif);
-  font-size: 15px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  gap: 10px;
   white-space: nowrap;
 }
-.logo-mark { width: 46px; height: auto; flex: none; text-transform: none; }
-.footer-badge { width: 84px; }
-@media (max-width: 900px) {
-  .logo { font-size: 13px; gap: 8px; letter-spacing: 0.12em; }
-  .logo-mark { width: 36px; }
+.logo-mark { width: 34px; height: auto; flex: none; }
+.logo-text,
+.footer-name {
+  font-family: "Noto Serif Kannada", "Tunga", var(--serif);
+  font-weight: 600;
+  letter-spacing: 0;
 }
-@media (max-width: 380px) {
-  .logo-text { display: none; }
+.logo-text { font-size: 19px; line-height: 1; }
+.footer-name { font-size: 20px; margin-bottom: 18px; }
+.footer-badge { width: 60px; margin-bottom: 16px; }
+.footer-map { text-decoration: underline !important; text-underline-offset: 3px; }
+.badge { width: 72px; }
+@media (max-width: 900px) {
+  .logo { gap: 8px; }
+  .logo-mark { width: 28px; }
+  .logo-text { font-size: 16px; }
+}
+@media (max-width: 360px) {
+  .logo-text { font-size: 14px; }
 }
