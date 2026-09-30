@@ -457,6 +457,22 @@ p { margin: 0; }
   .logo-text { font-size: 14px; }
 }
 
+/* intro: salon walkthrough video between the headline and the book button */
+.typing { margin-bottom: 36px; }
+.intro-video { width: min(860px, 100%); margin-bottom: 40px; }
+.intro-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 960 / 548;
+  object-fit: cover;
+  background: var(--teal);
+}
+.intro-sub { margin-top: 40px; }
+@media (max-width: 900px) {
+  .typing { margin-bottom: 28px; }
+  .intro-video { margin-bottom: 32px; }
+}
+
 /* Kannada text anywhere on the page uses the Kannada web font */
 [lang="kn"] { font-family: "Noto Serif Kannada", "Tunga", var(--serif); letter-spacing: 0; }
 
