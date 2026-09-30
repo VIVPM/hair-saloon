@@ -473,3 +473,6 @@ p { margin: 0; }
 @media (max-width: 360px) {
   .logo-text { font-size: 14px; }
 }
+
+/* Kannada text anywhere on the page uses the Kannada web font */
+[lang="kn"] { font-family: "Noto Serif Kannada", "Tunga", var(--serif); letter-spacing: 0; }
