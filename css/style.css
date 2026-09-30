@@ -452,7 +452,7 @@ p { margin: 0; }
   .service-grid { grid-template-columns: 1fr; gap: 44px; }
 }
 
-/* logo: small diamond "f" mark beside the Kannada salon name */
+/* logo: small diamond "f" mark beside the salon name */
 .logo {
   display: inline-flex;
   align-items: center;
@@ -462,28 +462,27 @@ p { margin: 0; }
 .logo-mark { width: 34px; height: auto; flex: none; }
 .logo-text,
 .footer-name {
-  font-family: "Noto Serif Kannada", "Tunga", var(--serif);
+  font-family: var(--serif);
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
-.logo-text { font-size: 19px; line-height: 1; }
-.footer-name { font-size: 20px; margin-bottom: 18px; }
+.logo-text { font-size: 15px; line-height: 1; }
+.footer-name { font-size: 16px; margin-bottom: 18px; }
 .footer-badge { width: 60px; margin-bottom: 16px; }
 .footer-map { text-decoration: underline !important; text-underline-offset: 3px; }
 .badge { width: 72px; }
 @media (max-width: 900px) {
   .logo { gap: 8px; }
   .logo-mark { width: 28px; }
-  .logo-text { font-size: 16px; }
+  .logo-text { font-size: 13px; letter-spacing: 0.14em; }
 }
 @media (max-width: 360px) {
-  .logo-text { font-size: 14px; }
+  .logo-text { font-size: 12px; letter-spacing: 0.1em; }
 }
 
 }
 
-/* Kannada text anywhere on the page uses the Kannada web font */
-[lang="kn"] { font-family: "Noto Serif Kannada", "Tunga", var(--serif); letter-spacing: 0; }
 
 /* visit us: address beside a medium-size Google map, above the footer */
 .visit {
@@ -524,26 +523,6 @@ html.lenis, html.lenis body { height: auto; }
   transition-delay: var(--reveal-delay, 0s);
 }
 .reveal-on .reveal.is-visible { opacity: 1; transform: none; }
-
-/* logo: Kannada name with the English name underneath */
-.logo-names { display: flex; flex-direction: column; gap: 3px; line-height: 1; }
-.logo-en {
-  font-family: var(--serif);
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-.footer-name { display: flex; flex-direction: column; gap: 6px; }
-.footer-name-en {
-  font-family: var(--serif);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-@media (max-width: 900px) {
-  .logo-en { font-size: 9px; letter-spacing: 0.16em; }
-}
 
 /* custom cursor (mouse and trackpad only): gold dot with a trailing ring */
 .has-cursor, .has-cursor * { cursor: none !important; }

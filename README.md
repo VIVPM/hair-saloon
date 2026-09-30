@@ -13,7 +13,7 @@ Open `index.html` in a browser to view it.
 
 ## Quick edits
 
-- **Salon name, address, phone:** the Kannada name (ಫ್ಯಾಷನ್ ಟಿವಿ ಸಲೋನ್), address and phone are in the header and footer of each `.html` file
+- **Salon name, address, phone:** "Fashion TV Salon", the address and phone are in the header and footer of each `.html` file
 - **Typing headline:** change `data-text="..."` on the `<h1>` in `index.html`
 - **Booking link (Calendly):** set `bookingUrl` at the top of `js/main.js`; every "book" button uses it
 - **Colours:** `--ivory`, `--ink`, `--gold`, `--champagne` at the top of `css/style.css` (taken from the salon: black signage, ivory walls, gold ceilings)
