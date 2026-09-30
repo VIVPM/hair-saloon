@@ -114,5 +114,38 @@ if (toggle && mobileNav) {
   mobileNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
 }
 
+// Custom cursor: only on devices with a real mouse or trackpad (phones keep normal touch)
+if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+  const root = document.documentElement;
+  const dot = document.createElement("div");
+  const ring = document.createElement("div");
+  dot.className = "cursor-dot";
+  ring.className = "cursor-ring";
+  dot.setAttribute("aria-hidden", "true");
+  ring.setAttribute("aria-hidden", "true");
+  document.body.append(dot, ring);
+  root.classList.add("has-cursor");
+
+  let x = -100, y = -100, rx = -100, ry = -100;
+  const follow = reducedMotion ? 1 : 0.18; // how quickly the ring catches up with the dot
+  window.addEventListener("mousemove", (e) => {
+    x = e.clientX;
+    y = e.clientY;
+    dot.style.transform = `translate(${x}px, ${y}px)`;
+    root.classList.add("cursor-visible");
+    root.classList.toggle("cursor-hover", !!e.target.closest("a, button, video, [role='button']"));
+  });
+  document.addEventListener("mouseleave", () => root.classList.remove("cursor-visible"));
+  window.addEventListener("mousedown", () => root.classList.add("cursor-down"));
+  window.addEventListener("mouseup", () => root.classList.remove("cursor-down"));
+  const loop = () => {
+    rx += (x - rx) * follow;
+    ry += (y - ry) * follow;
+    ring.style.transform = `translate(${rx}px, ${ry}px)`;
+    requestAnimationFrame(loop);
+  };
+  loop();
+}
+
 // Footer year
 document.querySelectorAll(".js-year").forEach((el) => (el.textContent = new Date().getFullYear()));
