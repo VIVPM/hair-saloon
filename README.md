@@ -8,7 +8,7 @@ Open `index.html` in a browser to view it.
 - `index.html` – all page content (text, sections, links)
 - `css/style.css` – design; colours and fonts are at the top in `:root`
 - `js/main.js` – booking link, typing headline, reviews slider, mobile menu
-- `images/` – temporary stock photos from [Unsplash](https://unsplash.com/license) (free for commercial use, no credit required); replace with your own salon photos, keeping the same file names
+- `images/` – temporary stock photos from [Pexels](https://www.pexels.com/license/) (free for commercial use, no credit required); replace with your own salon photos, keeping the same file names
 
 ## Quick edits
 
