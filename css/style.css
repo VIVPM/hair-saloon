@@ -445,3 +445,24 @@ p { margin: 0; }
   .reel { overflow-x: auto; }
   .reel-track { animation: none; }
 }
+
+/* logo: diamond "f" mark + salon name */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.logo-mark { width: 46px; height: auto; flex: none; text-transform: none; }
+.footer-badge { width: 84px; }
+@media (max-width: 900px) {
+  .logo { font-size: 13px; gap: 8px; letter-spacing: 0.12em; }
+  .logo-mark { width: 36px; }
+}
+@media (max-width: 380px) {
+  .logo-text { display: none; }
+}

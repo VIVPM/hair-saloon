@@ -12,7 +12,7 @@ Open `index.html` in a browser to view it.
 
 ## Quick edits
 
-- **Salon name, address, email:** search `index.html` for `Salon Name`, `Your City`, `hello@yoursalon.com`
+- **Salon name, address, email:** search the `.html` files for `Fashion TV Salon`, `Your City`, `hello@yoursalon.com`
 - **Typing headline:** change `data-text="..."` on the `<h1>` in `index.html`
 - **Booking link (Calendly):** set `bookingUrl` at the top of `js/main.js`; every "book" button uses it
 - **Colours:** `--yellow`, `--cream`, `--teal`, `--stripe`, `--pink` in `css/style.css`

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 76" width="100" height="76">
-  <rect width="100" height="76" fill="#efe9d9"/>
-  <text x="50" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#032b2c">YOUR BADGE</text>
-  <circle cx="30" cy="52" r="10" fill="#f9b1d4"/><circle cx="50" cy="52" r="10" fill="#f9b1d4"/><circle cx="70" cy="52" r="10" fill="#f9b1d4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 72" width="100" height="72">
+  <path d="M22 2 H78 L98 26 L50 70 L2 26 Z" fill="none" stroke="#efe9d9" stroke-width="4"/>
+  <text x="46" y="50" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#efe9d9">f</text>
+  <circle cx="57" cy="44" r="2.8" fill="#efe9d9"/>
 </svg>
