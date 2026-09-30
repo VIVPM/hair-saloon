@@ -213,6 +213,8 @@ p { margin: 0; }
   padding: 0 16px;
 }
 .split-title { font-size: 24px; margin-bottom: 24px; }
+.overlay-card { display: table; margin: 0 auto 20px; background: rgba(239, 233, 217, .92); padding: 14px 28px; }
+.overlay-card .split-title { margin-bottom: 0; }
 .split-content {
   display: flex;
   flex-direction: column;

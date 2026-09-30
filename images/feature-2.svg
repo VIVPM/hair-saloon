@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 850" width="960" height="850">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7dcc4"/><stop offset="1" stop-color="#cfc2a4"/></linearGradient></defs>
-  <rect width="960" height="850" fill="url(#g)"/>
-  <g fill="none" stroke="#032b2c" stroke-opacity=".35" stroke-width="3">
-    <rect x="440.0" y="365.0" width="80" height="60" rx="6"/>
-    <circle cx="480.0" cy="395.0" r="16"/>
-  </g>
-  <text x="50%" y="465.0" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#032b2c" fill-opacity=".55">Feature photo, 960 × 850</text>
-</svg>
