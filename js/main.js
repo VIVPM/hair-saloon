@@ -51,7 +51,7 @@ if (window.Lenis && !reducedMotion) {
 const revealTargets = [
   ".split-media", ".split-content", ".about > *", ".reviews", ".photo-strip img",
   ".promise > *", ".stylists > .eyebrow", ".stylists > .section-heading", ".stylists > .page-lead",
-  ".stylist", ".page-intro > *", ".service", ".page-cta > *", ".visit-info", ".visit-map",
+  ".stylist", ".page-intro > *", ".service", ".page-cta > *", ".why-list li", ".gallery > .eyebrow", ".gallery > .section-heading", ".gallery-grid img",
 ].join(",");
 if ("IntersectionObserver" in window && !reducedMotion) {
   document.documentElement.classList.add("reveal-on");
