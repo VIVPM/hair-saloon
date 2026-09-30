@@ -8,7 +8,7 @@ Open `index.html` in a browser to view it.
 - `index.html` – all page content (text, sections, links)
 - `css/style.css` – design; colours and fonts are at the top in `:root`
 - `js/main.js` – booking link, typing headline, reviews slider, mobile menu
-- `videos/salon.webm` + `videos/salon.mp4` – intro video of the salon (cropped from the uploaded clip, no sound); keep both formats when replacing it, plus `images/video-poster.jpg` as its still frame
+- `videos/salon.*` (wide, computers) + `videos/salon-portrait.*` (9:16, phones) – full-screen intro video, cropped from the uploaded clip, no sound; `images/video-poster.jpg` / `video-poster-portrait.jpg` are their still frames
 - `images/` – temporary stock photos from [Unsplash](https://unsplash.com/license) (free for commercial use, no credit required); replace with your own salon photos, keeping the same file names
 
 ## Quick edits

@@ -18,6 +18,28 @@ document.querySelectorAll(".js-book").forEach((link) => {
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// Intro video: tall 9:16 version on portrait screens (phones), wide version everywhere else
+const introVideo = document.querySelector(".intro-bg");
+if (introVideo && introVideo.dataset.portraitSrc) {
+  const wide = { base: "videos/salon", poster: "images/video-poster.jpg" };
+  const tall = { base: introVideo.dataset.portraitSrc, poster: "images/video-poster-portrait.jpg" };
+  const portrait = window.matchMedia("(max-aspect-ratio: 4/5)");
+  let current = wide; // the HTML already loads the wide version
+  const pick = () => {
+    const want = portrait.matches ? tall : wide;
+    if (want === current) return;
+    current = want;
+    const [webm, mp4] = introVideo.querySelectorAll("source");
+    webm.src = `${want.base}.webm`;
+    mp4.src = `${want.base}.mp4`;
+    introVideo.poster = want.poster;
+    introVideo.load();
+    introVideo.play().catch(() => {});
+  };
+  pick();
+  portrait.addEventListener("change", pick);
+}
+
 // Smooth scrolling: Lenis glides the page instead of jumping
 let lenis = null;
 if (window.Lenis && !reducedMotion) {
