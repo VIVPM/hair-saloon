@@ -68,8 +68,8 @@ if (typing) {
   }
 }
 
-// Reviews: duplicate the list so the marquee loops seamlessly
-document.querySelectorAll(".reviews-track").forEach((track) => {
+// Reviews: duplicate the list so the marquee loops seamlessly (no marquee, so no copies, when motion is reduced)
+if (!reducedMotion) document.querySelectorAll(".reviews-track").forEach((track) => {
   [...track.children].forEach((item) => {
     const copy = item.cloneNode(true);
     copy.setAttribute("aria-hidden", "true");
