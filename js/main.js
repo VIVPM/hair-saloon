@@ -2,8 +2,8 @@
 // Site settings — edit these
 // ==========================================================
 const CONFIG = {
-  // Paste your Calendly link here later, e.g. "https://calendly.com/your-salon"
-  bookingUrl: "#",
+  // Calendly booking page; every "book" button opens it in a new tab
+  bookingUrl: "https://calendly.com/vivpm99/30min",
   typingSpeedMs: 90,
 };
 
